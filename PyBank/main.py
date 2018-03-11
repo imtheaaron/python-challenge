@@ -2,7 +2,15 @@
 import csv
 import os
 
-budget_path = os.path.join("budget_data_1.csv")
+csv_name_short = input('Please place the file to analyze in this directory and enter the filename without filetype: ')
+
+#creates a filename to grab to read the budget data
+csv_name = csv_name_short + '.csv'
+
+#creates a name for the output data text file
+output_name = csv_name_short + 'summary.txt'
+
+budget_path = os.path.join(csv_name)
 
 #set initial variables
 total = 0
@@ -46,7 +54,7 @@ with open(budget_path, newline='') as budget_csv:
 average_change = int(rev_change_total / int(months - 1))
 
 # create and print to a text file
-text_output = open('pybank_output.txt', 'w')
+text_output = open(output_name, 'w')
 
 text_output.write('Financial Analysis\n')
 text_output.write('------------------\n')
