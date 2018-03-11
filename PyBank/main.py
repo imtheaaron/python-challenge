@@ -25,7 +25,7 @@ greatest_increase_month = 'none'
 with open(budget_path, newline='') as budget_csv:
     budget_reader = csv.reader(budget_csv, delimiter=",")
     next(budget_reader)
-#DO: NEED TO START FROM ROW 2
+
     for row in budget_reader:
         months = months + 1
         total = total + int(row[1])
