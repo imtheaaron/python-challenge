@@ -21,7 +21,7 @@ rev_change_total = 0
 greatest_increase = 0
 greatest_decrease = 0
 previous_revenue = 0
-greatest_increase_month = 'none'
+
 #open the csv and sum up all the monthly revenue
 
 with open(budget_path, newline='') as budget_csv:
