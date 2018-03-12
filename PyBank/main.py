@@ -2,6 +2,8 @@
 import csv
 import os
 
+#I thought it would be fun to see if I could promt for the file name and then use that for the script and output.
+#Seems to work and makes the code flexible so that you wouldn't have to edit the code to run it on different files.
 csv_name_short = input('Please place the file to analyze in this directory and enter the filename without filetype: ')
 
 #creates a filename to grab to read the budget data
